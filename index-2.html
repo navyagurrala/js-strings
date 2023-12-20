@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // types of functions
+        
+        // type1:named function 
+        function name(a){
+           return a%2==0?alert("even"):alert("odd");
+        }let b=name(2);
+        console.log(b);
+
+
+
+        // type2:arrow function
+        var hello=(a)=>{
+            return a%2==0 ? alert("even"):alert("odd");
+        }
+        hello(2);
+
+
+
+
+        // type3:ananamous function
+        var a=function(a){
+            return a%2==0 ?console.log("even"):console.log("odd");
+        }
+        a(4);
+
+
+
+
+        // type4:immediately invocked function
+        var v=(function(a){
+            return a%2==0?alert("even"):alert("odd");
+        })(4)
+        console.log(a);
+
+
+        
+
+        // task1:print months using conditional stmts in named function
+        function fun(a){
+            if(a==0){
+                console.log("jan");
+            }
+            else if(a==1){
+                console.log("feb");
+            }
+            else if(a==2){
+                console.log("mar");
+            }
+            else if(a==3){
+                console.log("apr");
+            }
+            else if(a==4){
+                console.log("june");
+            }
+            else if(a==5){
+                console.log("july");
+            }
+            else if(a==6){
+                console.log("aug");
+            }
+            else if(a==7){
+                console.log("sep");
+            }
+            else if(a==8){
+                console.log("oct");
+            }
+            else if(a==9){
+                console.log("nov");
+            }
+            else if(a==10){
+                console.log("dec");
+            }
+            else{
+                console.log("out of boundary");
+            }
+        }fun(3) ;
+        
+
+
+        // task2:print months using conditional stmts in arrow function
+        var hello=(a)=>{
+            if(a==0){
+                console.log("jan");
+            }
+            else if(a==1){
+                console.log("feb");
+            }
+            else if(a==2){
+                console.log("mar");
+            }
+            else if(a==3){
+                console.log("apr");
+            }
+            else if(a==4){
+                console.log("june");
+            }
+            else if(a==5){
+                console.log("july");
+            }
+            else if(a==6){
+                console.log("aug");
+            }
+            else if(a==7){
+                console.log("sep");
+            }
+            else if(a==8){
+                console.log("oct");
+            }
+            else if(a==9){
+                console.log("nov");
+            }
+            else if(a==10){
+                console.log("dec");
+            }
+            else{
+                console.log("out of boundary");
+            }
+        }
+        hello(2);
+        
+
+
+        //task3:print months using conditional stmts in anonomous function
+        var a=function(b){
+                 if(b==0){
+                    console.log("jan");
+            }
+            else if(b==1){
+                console.log("feb");
+            }
+            else if(b==2){
+                console.log("mar");
+            }
+            else if(b==3){
+                console.log("april");
+            }
+            else if(b==4){
+                console.log("june");
+            }
+            else if(b==5){
+                console.log("july");
+            }
+            else if(b==6){
+                console.log("aug");
+            }
+            else if(b==7){
+                console.log("sep");
+            }
+            else if(b==8){
+                console.log("oct");
+            }
+            else if(b==9){
+                console.log("nov");
+            }
+            else if(b==10){
+                console.log("dec");
+            }
+            else{
+                console.log("out of boundary");
+            }
+        }
+        a(4);
+        
+
+
+        // task4:print months using conditional stmts in immediate invocked functions
+        var a=(function(b){
+                 if(b==0){
+                    console.log("jan");
+            }
+            else if(b==1){
+                console.log("feb");
+            }
+            else if(b==2){
+                console.log("mar");
+            }
+            else if(b==3){
+                console.log("apr");
+            }
+            else if(b==4){
+                console.log("june");
+            }
+            else if(b==5){
+                console.log("july");
+            }
+            else if(b==6){
+                console.log("aug");
+            }
+            else if(b==7){
+                console.log("sep");
+            }
+            else if(b==8){
+                console.log("oct");
+            }
+            else if(b==9){
+                console.log("nov");
+            }
+            else if(b==10){
+                console.log("dec");
+            }
+            else{
+                console.log("out of boundary");
+            }
+        }
+        )(4)
+        a();
+
+
+    // task5:print months using switch in named function 
+    function name(a){
+    switch(a){
+        case 0:
+            console.log("jan");
+            break;
+       case 1:
+        console.log("feb");
+        break;
+       case 2:
+        console.log("mar");
+        break;
+       case 3:
+        console.log("apr");
+        break;
+    case 4:
+        console.log("may");
+        break;
+    case 5:
+        console.log("june");
+        break;
+    case 6:
+        console.log("july");
+        break;
+    case 7:
+        console.log("aug");
+        break;
+    case 8:
+        console.log("sep");
+        break;
+    case 9:
+        console.log("oct");
+        break;
+    case 10:
+     console.log("nov");
+     break;
+     case 11:
+        console.log("dec");
+        break;
+        default:
+        console.log("out of boundary");
+       }
+    }name(4);
+
+    </script>
+</body>
+</html>
